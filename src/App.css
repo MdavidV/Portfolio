@@ -524,6 +524,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 
 }
 
+.proj-txtx a{
+  color: #fff;
+  opacity: .75;
+}
+
+.proj-txtx a:hover{
+  opacity: 1;
+}
+
 .background-img-right{
   top: 20%;
   position: absolute;
