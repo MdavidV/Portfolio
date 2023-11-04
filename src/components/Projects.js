@@ -57,15 +57,15 @@ export const Projects = () => {
                             <p>Some projects that i have worked on: </p>
                             <Tab.Container id="projects-tabs" defaultActiveKey="first">
                                 <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                                    <Nav.Item>
+                                    {/* <Nav.Item>
                                         <Nav.Link eventKey="first">Tab One</Nav.Link>
                                     </Nav.Item>
-                                    <Nav.Item>
+                                    {/* <Nav.Item>
                                         <Nav.Link eventKey="second">Tab Two</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
                                         <Nav.Link eventKey="third">Tab three</Nav.Link>
-                                    </Nav.Item>
+                                    </Nav.Item> */} 
                                 </Nav>
                                 <Tab.Content>
                                     <Tab.Pane eventKey="first">

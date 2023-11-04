@@ -6,7 +6,7 @@ import headerImg from "../assets/img/header-img.svg";
 import TrackVisibility from "react-on-screen";
 import { isVisible } from "@testing-library/user-event/dist/utils";
 
-export const Banner = () => {
+export const Banner = ({ handleClick }) => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
@@ -70,24 +70,22 @@ export const Banner = () => {
                     <span className="wrap"> {text} </span>
                   </h1>
                   <p>
-                    Highly motivated and dedicated, Manuel David Viña Ariza is a
-                    forward-thinking Computer Science student at Saint Leo
-                    University with a keen interest in web development. With a
-                    passion for crafting elegant and efficient web solutions,
-                    Manuel excels in JavaScript and React Js, with a strong
-                    command over HTML5, CSS3, SCSS/SASS, Git and Github, as well
-                    as methodologies like SCRUM and AGILE. His proficiency in
-                    leveraging Bootstrap to create responsive and visually
-                    appealing websites underscores his commitment to delivering
-                    exceptional user experiences. With a proactive approach to
-                    learning and problem-solving, Manuel strives to stay at the
-                    forefront of technological advancements, ensuring that his
-                    work reflects the latest industry standards and best
-                    practices. Eager to contribute his skills and knowledge to a
-                    dynamic web development team, Manuel is dedicated to
-                    creating innovative and user-centric digital experiences.
+                    I am Manuel David Viña Ariza, a dedicated Computer Science
+                    student at Saint Leo University, specializing in web
+                    development. Proficient in JavaScript and React Js, I also
+                    possess strong expertise in HTML5, CSS3, SCSS/SASS, Git, and
+                    Github, with a solid grasp of Agile and Scrum methodologies.
+                    My ability to leverage Bootstrap for creating responsive and
+                    visually appealing websites reflects my commitment to
+                    delivering exceptional user experiences. I am constantly
+                    keeping abreast of the latest technological advancements and
+                    industry standards, ensuring that my work remains innovative
+                    and aligned with current best practices. I am enthusiastic
+                    about contributing my skills and knowledge to a
+                    collaborative web development team, where I can continue to
+                    create innovative and user-centric digital experiences."
                   </p>
-                  <button onClick={() => console.log("connect")}>
+                  <button onClick={handleClick}>
                     Let's Connect <ArrowRightCircle size={25} />
                   </button>
                 </div>

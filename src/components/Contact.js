@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
 
-export const Contact = () => {
+export const Contact = ({ reference }) => {
     const form = useRef();
 
 
@@ -21,7 +21,7 @@ export const Contact = () => {
     };
 
     return (
-        <section className="contact" id="connect">
+        <section className="contact" id="connect" ref={reference}>
             <Container>
                 <Row className="align-items-center">
                     <Col md={6}>
@@ -47,7 +47,7 @@ export const Contact = () => {
                                     <input type="tel"  placeholder="Phone Number" name="user_phone"></input>
                                 </Col>
 
-                                <Col sm={12}>
+                                <Col sm={12} className="px-1">
                                     <textarea row="6" placeholder="Message" name="message"></textarea>
                                     <button type="submit"><span>Send</span></button>
                                 </Col>

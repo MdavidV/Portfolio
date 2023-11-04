@@ -128,6 +128,7 @@ span.navbar-text{
   justify-content: center;
   line-height: 1;
   border: 1px solid rgba(255, 255, 255, .5);
+  color: white;
 }
 
 .social-icon a::before{
@@ -291,6 +292,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   letter-spacing: .8px;
   line-height: 1.5em;
   width: 96%;
+  text-align: justify;
 }
 
 .banner button{
@@ -417,9 +419,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   overflow: hidden;
 }
 
-.project .nav.nav-pills .nav-item{
+/* .project .nav.nav-pills .nav-item{
   width: 33.33333%;
-}
+} */
 
 .project .nav.nav-pills .nav-link{
   background-color: transparent;
@@ -479,6 +481,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   z-index: 1;
 }
 
+.proj-imgbx img{
+  height: 318px;
+}
+
 .proj-imgbx::before{
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
@@ -525,12 +531,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 }
 
 .proj-txtx a{
-  color: #fff;
+  color: #666;
   opacity: .75;
+  text-decoration: none;
+  transition: .3s ease all;
 }
 
 .proj-txtx a:hover{
   opacity: 1;
+  color: #fff;
 }
 
 .background-img-right{

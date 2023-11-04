@@ -7,17 +7,24 @@ import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact.js';
 import { Footer } from './components/Footer';
+import { useRef } from 'react';
 
 
 
 function App() {
+  const destinationSectionRef = useRef(null);
+  
+  const scrollToDestinationSection = () => {
+    destinationSectionRef.current.scrollIntoView({ behavior: 'smooth'});
+  };
+
   return (
     <div className="App">
-      <NavBar/>
-      <Banner/>
+      <NavBar handleClick={scrollToDestinationSection}/>
+      <Banner handleClick={scrollToDestinationSection}/>
       <Skills/>
       <Projects/>
-      <Contact/>
+      <Contact reference={destinationSectionRef}/>
       <Footer/>
     </div>
   );
